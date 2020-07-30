@@ -1,5 +1,5 @@
 def add(a,b):
-    return '[ToDo] <add> operation'
+    return a+b
 
 def sub(a,b):
     return '[ToDo] <sub> operation'
