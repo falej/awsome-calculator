@@ -1,3 +1,4 @@
+import sys
 import operations
 
 if __name__ == '__main__':
@@ -10,10 +11,17 @@ if __name__ == '__main__':
     ''')
 
     result = None
+    operation = None
+    num_a = None
+    num_b = None
 
-    operation = int(input('Select operation: '))
-    num_a = int(input('Enter number A: '))
-    num_b = int(input('Enter number B: '))
+    try:
+        operation = int(input('Select operation: '))
+        num_a = int(input('Enter number A: '))
+        num_b = int(input('Enter number B: '))
+    except:
+        print('Invalid input')
+        sys.exit()
 
     print('----------')
     print('INPUT VALUES')
